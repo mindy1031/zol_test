@@ -1,0 +1,232 @@
+$regHeight:37px;
+
+.reg_main{
+    height:760px;
+    width:980px;
+    margin:0 auto;
+    border:1px solid #e6e6e6;
+    h3{
+        padding: 16px 0 16px 90px;
+        background: #fafafa;
+        font: 18px/28px "微软雅黑";
+        line-height:28px;
+        color: #999;
+    }
+    .phone_reg{
+        height:40px;
+        padding: 30px 0 0 89px;
+        width:500px;
+        margin-bottom:30px;
+        span{
+            float:left;
+            width:249px;
+            height:100%;
+            border-left:1px solid #e6e6e6;
+            border-bottom:1px solid #e6e6e6;
+        }
+        span:first-child{
+            border-top:2px solid #e02d2d;
+            border-bottom:0;
+            color: #c00;
+            width:165px;
+            padding-left:84px;
+            font:18px/36px "微软雅黑";
+            line-height:36px;
+            background:url(../img/login-bg.png) no-repeat 60px;
+            background-position: -98px -235px;
+        }  
+    }
+    form{
+        width: 500px;
+        padding-left:89px;
+        label{
+            display:inline-block;
+            width:83px;
+            height:40px;
+            font: 14px/40px "Arial";
+            line-height:40px;
+            text-align: right;
+            color: #666;
+            i{
+                font-size:20px;
+                line-height:40px;
+                vertical-align:middle;
+                margin-right:5px;
+                color:#f30;
+            }
+        }
+        input{
+            width:278px;
+            height:38px;
+            border:1px solid #ccc;
+        }
+        p{
+            height:40px;
+            margin-left:83px;
+            color:#aaa;
+            font:12px/30px "";
+        }
+        .servic{
+            height: 40px;
+            font:12px/24px "";
+            color:#999;
+            .chekbox{
+                width:13px;
+                height:13px;
+                margin:12px 10px 0 83px;
+            }
+            a:hover{
+                text-decoration:underline;
+                color:#c30;
+            }
+        }
+        .botton{
+            width: 290px;
+            height: 40px;
+            font: bold 14px/40px "Arial";
+            color: #fff;
+            border:0;
+            border-radius:3px;
+            background:#e03131;
+            text-align: center;
+            margin-top:20px;
+            margin-left:83px;
+            &:hover{
+                background:#d20c0c;
+            }
+        }
+        div{
+            position: relative;
+            strong{
+                display:inline-block;
+                margin-left:10px;
+                position: absolute;
+                top: 0;
+                width:160px;
+                height:40px;
+                left: 362px;
+                padding: 0 0 0 20px;
+                font: 12px/40px "Arial";
+                white-space: nowrap;
+                &.corrent{
+                    background:url(../img/login-bg.png) no-repeat;
+                    background-position: -154px -150px;
+                }
+                &.mes_erro{
+                    background:url(../img/login-bg.png) no-repeat;
+                     color: #ff3333;
+                     background-position: -154px -184px;
+                }
+            }
+        }
+        .text2{
+            width:170px;
+        }
+        #code,.mes_verify{
+            width:100px;
+            height:39px;
+        }
+        #code{
+            border:1px solid #000;
+            display:inline-block;
+            margin-left:7px;
+            background:url(../img/pointer.png);
+            font: 24px/38px "微软雅黑";
+            color:#000;
+            text-align:center;
+            letter-spacing:2px;
+        }    
+        .code .mes_font{
+           left:410px;
+        }
+        .mes_verify{
+            margin-left:7px;
+            border:1px solid #ccc;
+        }
+    }
+    .hover_red{
+        font: 12px/40px "Arial";
+        margin-left:10px;
+    }
+    .reg_main_right{
+        width:275px;
+        border-left:1px solid #ccc;
+        height:297px;
+        margin-top:-70px;
+        p{
+            margin: -6px 0 0;
+            font: 12px/24px "Arial";
+            color: #666;
+            padding-left:25px;
+            margin-bottom:10px;
+            
+        }
+        .reg_link{
+            padding-left:25px;
+            .public_a{
+               display:block;
+               width:170px;
+               height:36px;
+               margin-top:15px;
+               background:url(../img/login-bg.png) no-repeat;
+            }
+            .a1{
+                background-position:0 -464px;
+            }
+            @for $i from 2 through 5{
+                .a#{$i}{
+                    background-position:0 (($i)-2)*-$regHeight;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

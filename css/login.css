@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+  background: #fafafa; }
+
+.login_main {
+  margin-top: 30px;
+  border: 1px solid #e6e6e6;
+  height: 350px;
+  background: #fff; }
+
+.login_right {
+  margin-right: 85px;
+  width: 290px;
+  height: 340px; }
+  .login_right .login_head h3 {
+    width: 189px;
+    color: #666;
+    font: 18px/70px "微软雅黑"; }
+  .login_right .login_head a {
+    width: 85px;
+    font: 12px/20px "微软雅黑";
+    background: url(../img/he2.png) no-repeat;
+    background-position: -280px -116px;
+    margin-top: 25px;
+    padding-left: 15px; }
+  .login_right form {
+    position: relative; }
+    .login_right form .mes_err {
+      display: none;
+      width: 270px;
+      height: 20px;
+      background: url(../img/login-bg.png) no-repeat #fff2f2;
+      background-position: -154px -194px;
+      border: 1px solid #c00;
+      padding-left: 20px;
+      font: 12px/20px "微软雅黑";
+      color: #c30;
+      position: absolute;
+      left: 0;
+      top: 50px; }
+    .login_right form input {
+      width: 290px;
+      height: 38px;
+      border: 1px solid #ccc;
+      margin-top: 10px; }
+    .login_right form a {
+      font: 12px/24px "";
+      text-align: right;
+      width: 290px;
+      display: block; }
+    .login_right form .login_btn {
+      width: 290px;
+      height: 40px;
+      font: bold 14px/40px "Arial";
+      color: #fff;
+      border: 0;
+      border-radius: 3px;
+      background: #e03131;
+      text-align: center;
+      margin-top: 10px; }
+      .login_right form .login_btn:hover {
+        background: #d20c0c; }
+  .login_right .linear {
+    width: 290px;
+    height: 1px;
+    display: block;
+    background: #eee;
+    margin: 20px 0;
+    position: relative; }
+    .login_right .linear s {
+      position: absolute;
+      left: 50%;
+      top: -12px;
+      margin-left: -50px;
+      width: 100px;
+      height: 24px;
+      background: #fff;
+      color: #666;
+      text-align: center;
+      font: 12px/24px ""; }
+  .login_right #partner_img {
+    text-align: center; }
+    .login_right #partner_img a {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: url(../img/he2.png) no-repeat;
+      margin: 0 5px; }
+    .login_right #partner_img #a1 {
+      background-position: 0px -82px; }
+      .login_right #partner_img #a1:hover {
+        background-position: 0px -121px; }
+    .login_right #partner_img #a2 {
+      background-position: -39px -82px; }
+      .login_right #partner_img #a2:hover {
+        background-position: -39px -121px; }
+    .login_right #partner_img #a3 {
+      background-position: -78px -82px; }
+      .login_right #partner_img #a3:hover {
+        background-position: -78px -121px; }
+    .login_right #partner_img #a4 {
+      background-position: -117px -82px; }
+      .login_right #partner_img #a4:hover {
+        background-position: -117px -121px; }
+    .login_right #partner_img #a5 {
+      background-position: -156px -82px; }
+      .login_right #partner_img #a5:hover {
+        background-position: -156px -121px; }

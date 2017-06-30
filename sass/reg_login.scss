@@ -1,0 +1,53 @@
+.margin{
+    width:990px;
+    margin:0  auto;
+}
+
+.bule_a{
+    color:#134ba0;
+    &:hover{
+        text-decoration:underline;
+        color:#c30;
+    }
+}
+.reg_login_head{
+    height:80px;
+    width:990px;
+    margin:0 auto;
+    padding-top:14px;
+    .logo_h4{
+        margin: 8px 0 0 8px;
+        font: 14px/44px simsun;
+        line-height:44px;
+        color: #666;
+        border-left: 1px solid #e6e6e6;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    .vip{
+        padding: 21px 0 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .top_red_a{
+        margin-top:16px;
+        color:#c00;
+        font: 14px/28px "微软雅黑";
+        padding: 0 10px;
+        &:hover{
+            background:#c33;
+            color:#fff;
+        } 
+    }
+}
+.reg_login_foot{
+    border-top:1px solid #dcdcdc;
+    margin:50px 0 25px 0;
+    padding-top:12px;
+    padding-bottom:25px;
+    font:12px/30px "微软雅黑";
+    color:#666;
+    a{
+        margin:0 8px;
+    }
+}

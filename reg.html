@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/reg.css" />
+		<link rel="stylesheet" href="css/reg_login.css" />
+		<title>zol商城注册</title>
+	</head>
+	<body>
+		<div class="reg_login_head clear scroll_main">
+			<a href="index.html"><img src="img/logo.png" class="l"/></a>
+			<h4 class="logo_h4 l">中关村在线旗下网上商城</h4>
+			<a href="login.html" class="r vip top_red_a">立即登录</a>
+			<span class="r vip">已经有ZOL商城账号？</span>
+		</div>
+		<div class="reg_main logregwid clear">
+			<h3>30秒快速注册，加入ZOL商城</h3>
+			<div class="phone_reg">
+				<span>用手机号注册</span>
+				<span></span>
+			</div>
+			<form action="#" method="post" class="l" id="form">
+				<div class="phone">
+					<label><i>*</i><b>手机号码：</b></label><input name="phones" class="text phones borc6" required="required"/><strong class="messege_styl1"></strong>
+					<p>请填写手机号码</p>
+				</div>
+				<div class="code clear">
+					<label class="l"><i>*</i><b>验证码：</b></label><input name="codes" class="text2 l codes borc6"  required="required"/><u id="code" class="l"></u><a href="javascrpit:;" class="hover_red bule_a l">换一张</a>
+					<strong class="mes_font messege_styl2"></strong>
+				</div>
+				<p>请填写图片验证码</p>
+				<div class="massage clear">
+					<label class="l"><i>*</i><b>短信验证：</b></label><input name="massages"  class="text2 l massages borc6" required="required"/><input class="mes_verify l" type="button" value="获取短信验证码"/>
+					<strong class="messege_styl3"></strong>
+				</div>
+				<p>请填写手机号码，然后点击[获取验证码]</p>
+				<div class="pwd">
+					<label><i>*</i><b>密码：</b></label><input name="pwds" type="password" class="text pwds borc6" required="required"/><strong class="messege_styl4"></strong>
+					<p>6-16位字母和数字的组合，不可用特殊字符</p>
+				</div>
+				<div class="pwd2">
+					<label><i>*</i><b>确认密码：</b></label><input name="pwd2s" type="password" class="text pwd2s borc6" required="required"/><strong class="messege_styl5"></strong>
+					<p>再次输入密码</p>
+				</div>
+				<div class="servic clear">
+					<input type="checkbox" checked="" class="chekbox l" id="chekbox">同意<a href="#" class="hover_red">《商城用户协议》</a><a href="#" class="hover_red">《隐私权说明》</a>
+				</div>
+				<div class="btn">
+					<input type="button" value="注册" class="botton" id="regbotton"/>
+				</div>
+			</form>
+			<div class="r reg_main_right">
+				<p>如果您已经注册，请<a href="login.html" class="bule_a">直接登录</a><br/>或者用以下方式登录：</p>
+				<div class="reg_link">
+					<a href="#" class="a1 public_a"></a>
+					<a href="#" class="a2 public_a"></a>
+					<a href="#" class="a3 public_a"></a>
+					<a href="#" class="a4 public_a"></a>
+					<a href="#" class="a5 public_a"></a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="reg_login_foot">
+			<div class="margin">
+				<p class="about l"><a href="#">关于ZOL商城</a>|<a href="#">联系我们</a>|<a href="#">帮助中心</a></p>
+				<p class="r">©2017. 中关村在线 版权所有</p>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="public/reg.js"></script>
+	</body>
+</html>

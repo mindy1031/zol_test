@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>ZOL团购列表</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/listPage.css"/>
+		<link rel="stylesheet" href="css/publicfoot.css" />
+	</head>
+	<body>
+		<header>
+			<div class="clear margin">
+				<div class="header_center_l l">
+					<a href="#">ZOL商城首页</a>
+					&nbsp;|&nbsp;
+					<a href="#">中关村在线</a>
+				</div>
+				<ul class="header_center_r r">
+					<li class="login"><a href="login.html" id="loginNow">请登录</a><span>|</span></li>
+					<li><a href="register.html">免费注册</a><span>|</span></li>
+					<li><a href="#">我的订单</a><span>|</span></li>
+					<li class="guanzhu">
+						<a href="#">关注团购<i></i></a><span>|</span>
+						<div class="code">
+                            <img src="listpageimg/erwm.jpg"> 
+                            <p> 微信关注: ZOL商城</p>
+                            <p>扫码赢优惠&nbsp;订单时时查</p>
+                        </div>
+					</li>
+					<li class="remind">
+						<a href="#">订阅推荐<i></i></a><span>|</span>
+						<div class="email-box">
+                            <p class="e_adr">请输入邮箱地址</p>
+                            <input id="tuan_email" type="text" >
+                            <input id="tuan_button" type="button" value="确定">
+                            <p id="tuan_error" class="remind1">推荐时间：每周二、四、六（节假日除外）</p>
+                        </div>
+					</li>
+					<li><a href="helpcenter.html">帮助中心</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="head-logo" class="margin clear">
+			<a class="logo l" href="#"><img src="listpageimg/logo.png"/></a>
+			<div class="search_box l">
+				<form action="index.php" method="GET">
+                    <div class="search" id="search">
+                        <input type="text" value="游戏本" name="searchName" id="search-text">
+                        <input type="submit" value="搜索" class="submit">
+                    </div>
+            	</form>
+            	<ul class="hot-search clear">
+                    <li><a href="#">魅族手机</a></li>				
+                    <li><a href="#">佳能相机</a></li>				
+                    <li><a href="#">小米手机</a></li>				
+                    <li><a href="#">戴尔 燃7000</a></li>				
+                    <li><a href="#">华为手机</a></li>				
+                </ul>
+			</div>
+			<div class="slogan r">
+				<a href="#" class="slo_img"></a>
+				<p>客服电话:<span>400-688-1999</span></p>
+			</div>
+		</div>
+		<div id="nav">
+			<div class="nav_cen margin clear">
+				<h3>团购商品分类</h3>
+                <ul class="nav-list l">
+                	<li class="active"><a href="index.html">首页</a></li>
+                	<li><a href="javascript:;">单品团</a></li>
+                	<li><a href="javascript:;">即将开团</a></li>
+                </ul>
+                <div class="nav-tips r">
+                    <a href="#">荣耀畅玩6X 现货放量抢</a>
+                </div>
+			</div>
+		</div>
+		<div id="main" class="margin clear">
+			<div class="banner">
+				<ul class="menu-list l">
+		            <li><a href="#"><i class="list1"></i>手机通讯</a></li>
+		            <li><a href="#"><i class="list2"></i>数码影像</a></li>
+		            <li><a href="#"><i class="list3"></i>笔记本/电脑</a></li>
+		            <li><a href="#"><i class="list4"></i>电脑外设</a></li>
+		            <li><a href="#"><i class="list5"></i>DIY主机/配件</a></li>
+		            <li><a href="#"><i class="list6"></i>家电/其他</a></li>
+		            <li><a href="#"><i class="list7"></i>智能生活</a></li>
+		        </ul>
+				<div class="banner_imgs l">
+					<div class="scroll_img">
+						<img src="img/banner1.jpg"/>
+						<img src="img/banner2.jpg"/>
+						<img src="img/banner3.jpg"/>
+						<img src="img/banner1.jpg"/>
+					</div>
+					<p class="banner_point">
+						<span class="first"></span>
+						<span></span>
+						<span></span>
+					</p>
+					<a href="javascript:;" id="banner_left_bnt"><</a>
+					<a href="javascript:;" id="banner_right_bnt">></a>
+				</div>
+				<div class="banner_right r">
+					<img src="listpageimg/right1.jpg"/>
+					<img src="listpageimg/right2.jpg"/>
+				</div>
+			</div>
+			<div class="service">
+				<ul class="service_list clear">
+					<li><a href="#"><i class="a1"></i><span>正品保障</span></a></li>
+					<li><a href="#"><i class="a2"></i><span>先行赔付</span></a></li>
+					<li><a href="#"><i class="a3"></i><span>发票保障</span></a></li>
+					<li><a href="#"><i class="a4"></i><span>24h发货</span></a></li>
+					<li><a href="#"><i class="a5"></i><span>无忧退货</span></a></li>
+				</ul>
+			</div>
+			<!--今日团-->
+			<!--吸顶条占位置，默认隐藏-->
+			<div class="nowday"> 
+				<div class="today_tit clear">
+					<h3 class="l">今日团</h3>
+					<ul class="today-list r">
+						<li><a href="#">手机通讯<i>(34)</i></a>|</li>
+						<li><a href="#">数码影像<i>(31)</i></a>|</li>
+						<li><a href="#">笔记本/电脑<i>(17)</i><i class="day-i"></i></a>|
+							<div class="detail-list">
+                                <div class="detail-panel clear">
+                                    <a href="#">
+                                        <span>笔记本</span><i>(22)</i>
+                                    </a>
+                                    <a href="#">
+                                        <span>平板电脑</span><i>(1)</i>
+                                    </a>
+                                </div>
+                                <b></b>
+                            </div>
+						</li>
+						<li><a href="#">电脑外设<i>(19)</i><i class="day-i"></i></a>|
+                            <div class="detail-list">
+                                <div class="detail-panel clear">
+                                    <a href="#"><span>数码周边产品</span><i>(12)</i></a>
+                                    <a href="#"><span>投影机</span><i>(3)</i></a>
+                                    <a href="#"><span>电脑外设</span><i>(4)</i></a>
+                                </div>
+                                <b></b>
+                            </div>
+                        </li>
+                        <li><a href="#">DIY主机/配件<i>(17)</i></a>|</li>
+                        <li><a href="#">家电/其他<i>(3)</i><i class="day-i"></i></a>|
+                            <div class="detail-list">
+                                <div class="detail-panel clear">
+                                    <a href="#">
+                                        <span>无线网络</span><i>(1)</i>
+                                    </a>
+                                    <a href="#">
+                                        <span>厨房小家电</span><i>(1)</i>
+                                    </a>
+                                    <a href="#">
+                                        <span>保健器材</span><i>(1)</i>
+                                    </a>
+                                </div>
+                                <b></b>
+                            </div>
+                        </li>
+                        <li><a href="#">智能生活<i>(2)</i></a>|</li>
+					</ul>
+				</div>
+				<div class="day-down">
+					<ul class="sorts clear">
+						<li class="default active"><a href="javascript:;">默认</a></li>
+						<li><a href="javascript:;">最新团购</a></li>
+						<li><a href="javascript:;">销量<b class="arrow-down"></b></a></li>
+						<li><a href="javascript:;">价格<b class="arrow-down"></b></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--商品列表-->
+			<ul class="goods clear">
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<li><img src="listpageimg/loding.gif" class="loading_img"/></li>
+				<!--<li>
+					<div class="pic">
+						<img class="pic-img" src="listpageimg/loding.gif"/>
+						<div class="show-time">
+							<div class="shadow"></div>
+							<p class="time">
+                                <span class="countdown">剩余：<em class="hour">3</em>天<em class="hour">02</em>时<em class="minute">53</em>分<em class="second">32</em>秒</span>
+                            </p>
+						</div>
+					</div>
+					<h4>
+                        <a href="#" target="_blank" title="【三星授权专卖 顺丰包邮】三星 Gear S2 R720智能手表可兼容安卓手机 素铅灰">【三星授权专卖 顺丰包邮】三星 Gear S2 R720智能手表可兼容安卓手机 素铅灰</a>
+                    </h4>
+                    <span class="msg">可兼容安卓手机、素铅灰，雪慕银</span>
+                    <div class="price-box clear">
+                    	<span class="now-price l"><i>￥</i>999</span>
+                    	<div class="price-info l">
+                            <p class="old-price">¥2239</p>
+                            <span class="discount">立省1214元</span>                           
+                    	</div>
+                    	<span class="now-rob r">马上抢</span>
+                    </div>
+				</li>-->
+			</ul>
+				
+                
+			<div class="more-goods">
+                <a href="single_team.html" id="more-goods">更多团购商品 &gt;&gt;</a>
+            </div>
+        </div>
+		<div class="footer_top">
+			<div class="margin">
+				<ul class="footer_ul">
+					<li>
+						<a href="#" class="a1">
+							<p>先行赔付</p>
+							<p>权益受损先行赔付</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="a2">
+							<p>正品保障</p>
+							<p>正规渠道售后有保障</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="a3">
+							<p>无忧退换</p>
+							<p>严格按照消法处理</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="a4">
+							<p>发票保障</p>
+							<p>售卖商品可提供发票</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="a5">
+							<p>快递包邮</p>
+							<p>满399快递包邮</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="a6">
+							<p>急速发货</p>
+							<p>24小时内发货</p>
+						</a>
+					</li>
+				</ul>
+				<div class="foot_top_cen clear">
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="#">帐号注册</a></dd>
+						<dd><a href="#">购物流程</a></dd>
+						<dd><a href="#">付款方式</a></dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd><a href="#">先行赔付</a></dd>
+						<dd><a href="#">退款退货流程</a></dd>
+						<dd><a href="#">投诉举报</a></dd>
+					</dl>
+					<dl>
+						<dt>商城保障</dt>
+						<dd><a href="#">正品保障</a></dd>
+						<dd><a href="#">物流配送</a></dd>
+						<dd><a href="#">24小时发货</a></dd>
+						<dd><a href="#">发票保障</a></dd>
+					</dl>
+					<dl>               
+						<dt>商家服务</dt>
+						<dd><a href="#">商家中心</a></dd>
+						<dd><a href="#">商城规则</a></dd>
+						<dd><a href="#">商家帮助</a></dd>
+					</dl>
+					<dl class="foot_img foot_img1 ">
+						<dt>400-688-1999</dt>
+						<dd>工作日(9:00-18:00)</dd>
+	                    <dd><a href="#" class="sina">关注新浪微博</a></dd>
+					</dl>
+					<dl class="foot_img foot_img2">
+						<dt>商家合作</dt>
+						<dd>错过天猫？别再错过我们！</dd>
+	                    <dd>ZOL商城开启全新旅程！</dd>
+	                    <dd><a href="#" class="back_red">关于如入驻 ></a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="foot_bot_cen margin">
+				<div class="partner">
+					<span>合作伙伴：</span>
+					<p>
+                        <a href="#">华为商城</a>|
+                        <a href="#">卷皮网</a>|
+                        <a href="#">电子商务平台</a>|
+                        <a href="#">中国电子银行网</a>|
+                        <a href="#">三帝贸易网</a>|
+                        <a href="#">团购</a>|
+                        <a href="#">eNet商城</a>|
+                        <a href="#">家具网</a>|
+                        <a href="#">手表品牌大全</a>|
+                        <a href="#">钻石</a>|
+                        <a href="#">伊秀女性网</a>|
+                        <a href="#">电子产品世界</a>|
+                        <a href="#">挖东西比价网</a>|
+                        <a href="#">易购网</a>|
+                        <a href="#">华强电子网</a>|
+                        <a href="#">广告网</a>|
+                        <a href="#">网上114</a>|
+                    </p>
+				</div>
+				<div class="footer_nav">
+					<a href="#">中关村在线</a>
+					|
+					<a href="#">ZOL商城</a>
+					|
+					<a href="#">团购</a>
+					|
+					<a href="#">限时抢购</a>
+					|
+					<a href="#">经销商</a>
+					|
+					<a href="#">产品报价</a>
+					|
+					<a href="#">论坛</a>
+					|
+					<a href="#">问答</a>
+				</div>
+				<div class="copyright">
+                    <a href="#">关于ZOL商城</a>
+					|
+					<a href="#">帮助中心</a>
+					|
+					<a href="#">联系我们</a>
+					|
+					<a href="#">发展历程</a>
+					|
+					<a href="#">媒体报道</a>
+
+                    <p>
+                    	2017 中关村在线 版权所有.<a href="#">京ICP证150096号</a>&nbsp;&nbsp; 京ICP备14061128号 &nbsp;&nbsp;<a href="#">京公网安备11010802020026号</a><a href="#">网络文化经营许可证京网文[2016]1631-199</a>
+                    </p>
+                </div>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="public/list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
